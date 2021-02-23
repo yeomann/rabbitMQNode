@@ -1,0 +1,31 @@
+{
+  "name": "rabbitmqnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "producer": "nodemon --experimental-modules src/producer-consumer/producer.js",
+    "consumer": "nodemon --experimental-modules src/producer-consumer/consumer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yeomann/rabbitMQNode.git"
+  },
+  "author": "Danish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeomann/rabbitMQNode/issues"
+  },
+  "homepage": "https://github.com/yeomann/rabbitMQNode#readme",
+  "dependencies": {
+    "amqplib": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.17",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
